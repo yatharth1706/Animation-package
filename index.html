@@ -2,54 +2,14 @@
 <html>
   <head>
       <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="styles/animations.css" />
-    <title>Animation</title>
-  </head>
-  <body>
-    <div class="jello" id="welcome">
-      <h3>Welcome</h3>
-    </div>
-    <div class="controls">
-      <select id="animations">
-        <option value="swing">Swing</option>
-        <option value="tada">Tada</option>
-        <option value="wobble">Wobble</option>
-        <option value="heartbeat">Heartbeat</option>
-        <option value="jello">jello</option>
-        <option value="bounce">bounce</option>
-        <option value="flash">flash</option>
-        <option value="pulse">pulse</option>
-        <option value="shake">shake</option>
-        <option value="slingShot">slingShot</option>
-        <option value="rubberband">rubberband</option>
-      </select>
-      <button class="btn btn-md btn-primary" id="btn1">
-        Apply Animation
-      </button>
-    </div>
-    <script>
-      function testAnim(x) {
-        $('#welcome').removeClass().addClass(x).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-          $(this).removeClass();
-        });
-      };
-    
-      $(document).ready(function(){
-        $('#btn1').click(function(e){
-          e.preventDefault();
-          var anim = $('#animations').val();
-          testAnim(anim);
-        });
-    
-        $('#animations').change(function(){
-          var anim = $(this).val();
-          testAnim(anim);
-        });
-      });
-    
-    </script>
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="styles/animations.css" />
+        <title>Animation</title>
+    </head>
+    <body>
+        
+      
   </body>
 </html>
